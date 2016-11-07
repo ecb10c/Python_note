@@ -1,0 +1,14 @@
+1. django-admin.py命令无效：使用django-admin
+2. pycharm显示找不到引用:使用File\Invalidate Caches清除缓存
+3. 安装virtualenvwrapper时报错"Command python setup.py egg_info failed with error code 1"：FQ
+4. pycharm无法运行调试：非虚拟外部环境中没有安装django
+cmd:
+cd/dir/mkdir/(rd/s/q)
+python:
+pip list/install/uninstall
+virtualenv envname
+envname/scripts/activate
+envname/scripts/deactivate
+django-admin startproject sitename
+python manage.py startapp appname
+python manage.py runserver 0.0.0.0:8080
