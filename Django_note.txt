@@ -20,3 +20,8 @@ pip
 virtualenv
 django
 django-suit
+
+
+todo:
+plone
+django-cms
