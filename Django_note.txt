@@ -26,3 +26,4 @@ todo:
 plone
 django-cms
 https://github.com/divio/django-cms/
+mezzanine
