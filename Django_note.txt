@@ -20,8 +20,9 @@ pip
 virtualenv
 django
 django-suit
-
+djangocms-installer
 
 todo:
 plone
 django-cms
+https://github.com/divio/django-cms/
