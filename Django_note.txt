@@ -3,7 +3,18 @@
 3. 安装virtualenvwrapper时报错"Command python setup.py egg_info failed with error code 1":FQ
 4. pycharm无法运行调试:非虚拟外部环境中没有安装django
 5. django后台admin改为中文:在MIDDLEWARE第二行添加'django.middleware.locale.LocaleMiddleware',#设置admin中文显示
-6. 使用django-suit:使用pip安装django-suit后在setting中添加suit并位于admin前 
+6. 使用django-suit:使用pip安装django-suit后在setting中添加suit并位于admin前
+7. djangocms无法创建project:先dir目录，再cd该目录，再使用djangocms projectname创建
+8. django static: 
+STATICFILES_DIR 默认寻找路径
+STATIC_URL 标明相对目录下static文件路径
+STATIC_ROOT collectstatic集中目录
+用法：
+{% load staticfiles %}
+<link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">或
+<link href="{{ STATIC_URL }}css/bootstrap-theme.min.css" rel="stylesheet">
+(STATIC_URL依然会根据STATICFILES_DIR寻找)
+
 
 cmd:
 cd/dir/mkdir/(rd/s/q)
@@ -15,21 +26,23 @@ envname/scripts/deactivate
 django-admin startproject sitename
 python manage.py startapp appname
 python manage.py runserver 0.0.0.0:8080
+djangocms projectname
+djangocms -f -p . projectname
 
 pip
 virtualenv
 django
-django-suit
 djangocms-installer
+django-suit
 
 todo:
-django-cms
-https://github.com/divio/django-cms/
-mezzanine
-
+bootstrap3
+bootstrap toolkit
 django
 django-cms
+
 flask
 tornado
 mezzanine
 plone
+pygame
