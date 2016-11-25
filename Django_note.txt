@@ -14,7 +14,8 @@ STATIC_ROOT collectstatic集中目录
 <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">或
 <link href="{{ STATIC_URL }}css/bootstrap-theme.min.css" rel="stylesheet">
 (STATIC_URL依然会根据STATICFILES_DIR寻找)
-
+9. djangocms news&blog模块无法安装:http://www.lfd.uci.edu/~gohlke/pythonlibs/ 
+手动安装lxml。其中win32/64指的是python的位数而不是windows。一般用win32。
 
 cmd:
 cd/dir/mkdir/(rd/s/q)
@@ -49,3 +50,4 @@ pygame
 
 https://www.zhihu.com/question/24590883
 https://startbootstrap.com/
+http://www.lfd.uci.edu/~gohlke/pythonlibs/
