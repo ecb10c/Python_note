@@ -33,8 +33,9 @@ djangocms -f -p . projectname
 pip
 virtualenv
 django
-djangocms-installer
 django-suit
+djangocms-installer
+aldryn-newsblog
 
 todo:
 bootstrap3
